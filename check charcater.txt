@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main () {
+	char ch;
+	//program to check whether the entered character is number alphabet or any special symbol
+	printf("Enter a character from keyboard:");
+	scanf("%c",&ch);
+	
+	if(ch>='a' && ch<='z'|| ch>='A' && ch<='Z')
+	{
+		if(ch>='A' && ch<='Z')
+		{
+			printf("Entered character is '%c' that is uppercase alphabet ",ch);
+		}
+		else
+		{
+			printf("Entered character is '%c' that is lowercase alphabet",ch);
+		}
+	}
+	else if(ch=='0'||ch=='1'||ch=='2'||ch=='0'||ch=='3'||ch=='4'||ch=='5'||ch=='6'||ch=='7'||ch=='8'||ch=='9')
+	{
+		printf("Entered charcter is '%c'' and that is number",ch);
+	}
+	else
+	{
+		printf("Entered character is '%c' and that is special character",ch);
+	}
+	
+	return 0;
+}
